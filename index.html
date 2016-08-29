@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<script src="assets/script/jquery-1.12.1.min.js"></script>	
+		<script src="assets/script/jquery.canvasjs.min.js"></script>
+		<script src="assets/script/js/violetGraph.js"></script>
+		<script src="assets/script/js/blueGraph.js"></script>
+		<script src="assets/script/js/greenGraph.js"></script>
+		<script src="assets/script/js/yellowGraph.js"></script>
+		<script src="assets/script/js/redGraph.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Noto+Serif&subset=greek,latin' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<title>ESSG Project</title>
+		<script>
+			$(function(){
+				$("#title").hide().fadeIn(3000);
+				$("[id!='title']").hide().fadeIn(5000);				
+			});
+		</script>
+	</head>
+	<body>
+		<h1 align="center" id="title">Electromagnetic Spectrum Sine Graphs</h1>
+		<br><br>
+		<div align="center">
+			<h2 id="violetTitle">Violet Light</h2>
+			<table border="1" cellpadding="5">
+				<tr>
+					<th colspan="6"><div id="tableTitle">y=10sin 0.63x</div></th>
+				</tr>
+				<tr>
+					<td><div id="vr1c1">x</div></td>
+					<td><div id="vr1c2" class="dataCell">0</div></td>
+					<td><div id="vr1c3" class="dataCell">1.0</div></td>
+					<td><div id="vr1c4" class="dataCell">2.0</div></td>
+					<td><div id="vr1c5" class="dataCell">3.0</div></td>
+					<td><div id="vr1c6" class="dataCell">4.0</div></td>
+				</tr>
+				<tr>
+					<td><div id="vr2c1">sin 0.63x</div></td>
+					<td><div id="vr2c2" class="dataCell">0</div></td>
+					<td><div id="vr2c3" class="dataCell">1</div></td>
+					<td><div id="vr2c4" class="dataCell">0</div></td>
+					<td><div id="vr2c5" class="dataCell">-1</div></td>
+					<td><div id="vr2c6" class="dataCell">0</div></td>
+				</tr>
+				<tr>
+					<td><div id="vr3c1">10sin 0.63x</div></td>
+					<td><div id="vr3c2" class="dataCell">0</div></td>
+					<td><div id="vr3c3" class="dataCell">10</div></td>
+					<td><div id="vr3c4" class="dataCell">0</div></td>
+					<td><div id="vr3c5" class="dataCell">-10</div></td>
+					<td><div id="vr3c6" class="dataCell">0</div></td>
+				</tr>
+			</table>
+		</div>
+		<div id="violetChartContainer" class="chartContainer" align="right"></div>
+		<br>
+		<div align="center">
+			<h2 id="blueTitle">Blue Light</h2>
+			<table border="1" cellpadding="5">
+				<tr>
+					<th colspan="6"><div id="tableTitle">y=10sin 0.58x</div></th>
+				</tr>
+				<tr>
+					<td><div id="br1c1">x</div></td>
+					<td><div id="br1c2" class="dataCell">0</div></td>
+					<td><div id="br1c3" class="dataCell">0.9</div></td>
+					<td><div id="br1c4" class="dataCell">1.8</div></td>
+					<td><div id="br1c5" class="dataCell">2.7</div></td>
+					<td><div id="br1c6" class="dataCell">3.6</div></td>
+				</tr>
+				<tr>
+					<td><div id="br2c1">sin 0.58x</div></td>
+					<td><div id="br2c2" class="dataCell">0</div></td>
+					<td><div id="br2c3" class="dataCell">1</div></td>
+					<td><div id="br2c4" class="dataCell">0</div></td>
+					<td><div id="br2c5" class="dataCell">-1</div></td>
+					<td><div id="br2c6" class="dataCell">0</div></td>
+				</tr>
+				<tr>
+					<td><div id="br3c1">10sin 0.58x</div></td>
+					<td><div id="br3c2" class="dataCell">0</div></td>
+					<td><div id="br3c3" class="dataCell">10</div></td>
+					<td><div id="br3c4" class="dataCell">0</div></td>
+					<td><div id="br3c5" class="dataCell">-10</div></td>
+					<td><div id="br3c6" class="dataCell">0</div></td>
+				</tr>
+			</table>
+		</div>
+		<div id="blueChartContainer" class="chartContainer" align="right"></div>
+		<br>
+		<div align="center">
+			<h2 id="greenTitle">Green Light</h2>
+			<table border="1" cellpadding="5">
+				<tr>
+					<th colspan="6"><div id="tableTitle">y=10sin 0.55x</div></th>
+				</tr>
+				<tr>
+					<td><div id="gr1c1">x</div></td>
+					<td><div id="gr1c2" class="dataCell">0</div></td>
+					<td><div id="gr1c3" class="dataCell">0.9</div></td>
+					<td><div id="gr1c4" class="dataCell">1.7</div></td>
+					<td><div id="gr1c5" class="dataCell">2.6</div></td>
+					<td><div id="gr1c6" class="dataCell">3.5</div></td>
+				</tr>
+				<tr>
+					<td><div id="gr2c1">sin 0.55x</div></td>
+					<td><div id="gr2c2" class="dataCell">0</div></td>
+					<td><div id="gr2c3" class="dataCell">1</div></td>
+					<td><div id="gr2c4" class="dataCell">0</div></td>
+					<td><div id="gr2c5" class="dataCell">-1</div></td>
+					<td><div id="gr2c6" class="dataCell">0</div></td>
+				</tr>
+				<tr>
+					<td><div id="gr3c1">10sin 0.55x</div></td>
+					<td><div id="gr3c2" class="dataCell">0</div></td>
+					<td><div id="gr3c3" class="dataCell">10</div></td>
+					<td><div id="gr3c4" class="dataCell">0</div></td>
+					<td><div id="gr3c5" class="dataCell">-10</div></td>
+					<td><div id="gr3c6" class="dataCell">0</div></td>
+				</tr>
+			</table>
+		</div>
+		<div id="greenChartContainer" class="chartContainer" align="right"></div>
+		<br>
+		<div align="center">
+			<h2 id="yellowTitle">Yellow Light</h2>
+			<table border="1" cellpadding="5">
+				<tr>
+					<th colspan="6"><div id="tableTitle">y=10sin 0.44x</div></th>
+				</tr>
+					<tr>
+					<td><div id="yr1c1">x</div></td>
+					<td><div id="yr1c2" class="dataCell">0</div></td>
+					<td><div id="yr1c3" class="dataCell">0.7</div></td>
+					<td><div id="yr1c4" class="dataCell">1.4</div></td>
+					<td><div id="yr1c5" class="dataCell">2.1</div></td>
+					<td><div id="yr1c6" class="dataCell">2.8</div></td>
+				</tr>
+				<tr>
+					<td><div id="yr2c1">sin 0.44x</div></td>
+					<td><div id="yr2c2" class="dataCell">0</div></td>
+					<td><div id="yr2c3" class="dataCell">1</div></td>
+					<td><div id="yr2c4" class="dataCell">0</div></td>
+					<td><div id="yr2c5" class="dataCell">-1</div></td>
+					<td><div id="yr2c6" class="dataCell">0</div></td>
+				</tr>
+				<tr>
+					<td><div id="yr3c1">10sin 0.44x</div></td>
+					<td><div id="yr3c2" class="dataCell">0</div></td>
+					<td><div id="yr3c3" class="dataCell">10</div></td>
+					<td><div id="yr3c4" class="dataCell">0</div></td>
+					<td><div id="yr3c5" class="dataCell">-10</div></td>
+					<td><div id="yr3c6" class="dataCell">0</div></td>
+				</tr>
+			</table>
+		</div>
+		<div id="yellowChartContainer" class="chartContainer" align="right"></div>
+		<br>
+		<div align="center">
+			<h2 id="redTitle">Red Light</h2>
+			<table border="1" cellpadding="5">
+				<tr>
+					<th colspan="6"><div id="tableTitle">y=10sin 0.42x</div></th>
+				</tr>
+				<tr>
+					<td><div id="rr1c1">x</div></td>
+					<td><div id="rr1c2" class="dataCell">0</div></td>
+					<td><div id="rr1c3" class="dataCell">0.7</div></td>
+					<td><div id="rr1c4" class="dataCell">1.3</div></td>
+					<td><div id="rr1c5" class="dataCell">2.0</div></td>
+					<td><div id="rr1c6" class="dataCell">2.6</div></td>
+				</tr>
+				<tr>
+					<td><div id="rr2c1">sin 0.42x</div></td>
+					<td><div id="rr2c2" class="dataCell">0</div></td>
+					<td><div id="rr2c3" class="dataCell">1</div></td>
+					<td><div id="rr2c4" class="dataCell">0</div></td>
+					<td><div id="rr2c5" class="dataCell">-1</div></td>
+					<td><div id="rr2c6" class="dataCell">0</div></td>
+				</tr>
+				<tr>
+					<td><div id="rr3c1">10sin 0.42x</div></td>
+					<td><div id="rr3c2" class="dataCell">0</div></td>
+					<td><div id="rr3c3" class="dataCell">10</div></td>
+					<td><div id="rr3c4" class="dataCell">0</div></td>
+					<td><div id="rr3c5" class="dataCell">-10</div></td>
+					<td><div id="rr3c6" class="dataCell">0</div></td>
+				</tr>
+			</table>
+		</div>
+		<div id="redChartContainer" class="chartContainer" align="right"></div>
+	</body>
+</html>

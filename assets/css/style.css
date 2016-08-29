@@ -1,0 +1,24 @@
+#title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: xx-large;
+}
+div {
+	font-family: 'Noto Serif', serif;
+	font-size: medium;
+}
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: large;
+}
+.chartContainer {
+	height: 300px;
+	width: 100%;
+}
+td {
+	width: 100px;
+}
+.dataCell {
+	text-align: center;
+}
